@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E29D57B325EE353D00BF9761 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D57B225EE353D00BF9761 /* AppDelegate.swift */; };
+		E29D57B725EE353D00BF9761 /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D57B625EE353D00BF9761 /* ImageController.swift */; };
+		E29D57BC25EE353F00BF9761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E29D57BB25EE353F00BF9761 /* Assets.xcassets */; };
+		E29D57BF25EE353F00BF9761 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29D57BD25EE353F00BF9761 /* LaunchScreen.storyboard */; };
+		E29D57DA25EE370C00BF9761 /* ImageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D57D625EE370C00BF9761 /* ImageCollectionView.swift */; };
+		E29D57DB25EE370C00BF9761 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D57D725EE370C00BF9761 /* ImageCollectionViewCell.swift */; };
+		E29D57DC25EE370C00BF9761 /* ImageCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D57D825EE370C00BF9761 /* ImageCollectionViewFlowLayout.swift */; };
+		E29D57DD25EE370C00BF9761 /* ImageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D57D925EE370C00BF9761 /* ImageDataSource.swift */; };
+		E29D57E025EE371F00BF9761 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D57DF25EE371F00BF9761 /* Image.swift */; };
+		E29D57E525EE41F100BF9761 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D57E425EE41F100BF9761 /* Endpoint.swift */; };
+		E29D57EA25EE4A2300BF9761 /* ImageSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D57E925EE4A2300BF9761 /* ImageSearchBar.swift */; };
+		E29D57EF25EE6E7F00BF9761 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D57EE25EE6E7F00BF9761 /* Constants.swift */; };
+		E29D57F725EE8E4B00BF9761 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D57F625EE8E4B00BF9761 /* UIColor+Extension.swift */; };
+		E29D57FC25EE909E00BF9761 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D57FB25EE909E00BF9761 /* DetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E29D57AF25EE353D00BF9761 /* NASA's Image&Video Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NASA's Image&Video Library.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29D57B225EE353D00BF9761 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E29D57B625EE353D00BF9761 /* ImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
+		E29D57BB25EE353F00BF9761 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E29D57BE25EE353F00BF9761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E29D57C025EE353F00BF9761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E29D57D625EE370C00BF9761 /* ImageCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCollectionView.swift; path = "NASA's Image&Video Library/View/Collection View /ImageCollectionView.swift"; sourceTree = SOURCE_ROOT; };
+		E29D57D725EE370C00BF9761 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCollectionViewCell.swift; path = "NASA's Image&Video Library/View/Collection View /ImageCollectionViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		E29D57D825EE370C00BF9761 /* ImageCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCollectionViewFlowLayout.swift; path = "NASA's Image&Video Library/View/Collection View /ImageCollectionViewFlowLayout.swift"; sourceTree = SOURCE_ROOT; };
+		E29D57D925EE370C00BF9761 /* ImageDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageDataSource.swift; path = "NASA's Image&Video Library/View/Collection View /ImageDataSource.swift"; sourceTree = SOURCE_ROOT; };
+		E29D57DF25EE371F00BF9761 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		E29D57E425EE41F100BF9761 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		E29D57E925EE4A2300BF9761 /* ImageSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchBar.swift; sourceTree = "<group>"; };
+		E29D57EE25EE6E7F00BF9761 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E29D57F625EE8E4B00BF9761 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		E29D57FB25EE909E00BF9761 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E29D57AC25EE353D00BF9761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E29D57A625EE353D00BF9761 = {
+			isa = PBXGroup;
+			children = (
+				E29D57B125EE353D00BF9761 /* NASA's Image&Video Library */,
+				E29D57B025EE353D00BF9761 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E29D57B025EE353D00BF9761 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E29D57AF25EE353D00BF9761 /* NASA's Image&Video Library.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E29D57B125EE353D00BF9761 /* NASA's Image&Video Library */ = {
+			isa = PBXGroup;
+			children = (
+				E29D57ED25EE6E6D00BF9761 /* Utilities */,
+				E29D57E225EE410C00BF9761 /* Networking */,
+				E29D57CC25EE360200BF9761 /* App */,
+				E29D57CF25EE363400BF9761 /* View */,
+				E29D57CD25EE361000BF9761 /* Controller */,
+				E29D57CE25EE362300BF9761 /* Model */,
+				E29D57BB25EE353F00BF9761 /* Assets.xcassets */,
+				E29D57BD25EE353F00BF9761 /* LaunchScreen.storyboard */,
+				E29D57C025EE353F00BF9761 /* Info.plist */,
+			);
+			path = "NASA's Image&Video Library";
+			sourceTree = "<group>";
+		};
+		E29D57CC25EE360200BF9761 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E29D57B225EE353D00BF9761 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E29D57CD25EE361000BF9761 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E29D57B625EE353D00BF9761 /* ImageController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E29D57CE25EE362300BF9761 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E29D57DF25EE371F00BF9761 /* Image.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E29D57CF25EE363400BF9761 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E29D57F925EE906200BF9761 /* Main Scene */,
+				E29D57FA25EE907700BF9761 /* Detail Scene */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E29D57D125EE367500BF9761 /* ImageCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				E29D57D625EE370C00BF9761 /* ImageCollectionView.swift */,
+				E29D57D725EE370C00BF9761 /* ImageCollectionViewCell.swift */,
+				E29D57D825EE370C00BF9761 /* ImageCollectionViewFlowLayout.swift */,
+				E29D57D925EE370C00BF9761 /* ImageDataSource.swift */,
+			);
+			path = ImageCollectionView;
+			sourceTree = "<group>";
+		};
+		E29D57E225EE410C00BF9761 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E29D57E325EE411B00BF9761 /* Endpoint */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E29D57E325EE411B00BF9761 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				E29D57E425EE41F100BF9761 /* Endpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		E29D57E825EE4A1000BF9761 /* ImageSearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				E29D57E925EE4A2300BF9761 /* ImageSearchBar.swift */,
+			);
+			path = ImageSearchBar;
+			sourceTree = "<group>";
+		};
+		E29D57ED25EE6E6D00BF9761 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E29D57EE25EE6E7F00BF9761 /* Constants.swift */,
+				E29D57F625EE8E4B00BF9761 /* UIColor+Extension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E29D57F925EE906200BF9761 /* Main Scene */ = {
+			isa = PBXGroup;
+			children = (
+				E29D57D125EE367500BF9761 /* ImageCollectionView */,
+				E29D57E825EE4A1000BF9761 /* ImageSearchBar */,
+			);
+			path = "Main Scene";
+			sourceTree = "<group>";
+		};
+		E29D57FA25EE907700BF9761 /* Detail Scene */ = {
+			isa = PBXGroup;
+			children = (
+				E29D57FB25EE909E00BF9761 /* DetailView.swift */,
+			);
+			path = "Detail Scene";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E29D57AE25EE353D00BF9761 /* NASA's Image&Video Library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E29D57C325EE353F00BF9761 /* Build configuration list for PBXNativeTarget "NASA's Image&Video Library" */;
+			buildPhases = (
+				E29D57AB25EE353D00BF9761 /* Sources */,
+				E29D57AC25EE353D00BF9761 /* Frameworks */,
+				E29D57AD25EE353D00BF9761 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NASA's Image&Video Library";
+			productName = "NASA's Image&Video Library";
+			productReference = E29D57AF25EE353D00BF9761 /* NASA's Image&Video Library.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E29D57A725EE353D00BF9761 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					E29D57AE25EE353D00BF9761 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = E29D57AA25EE353D00BF9761 /* Build configuration list for PBXProject "NASA's Image&Video Library" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E29D57A625EE353D00BF9761;
+			productRefGroup = E29D57B025EE353D00BF9761 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E29D57AE25EE353D00BF9761 /* NASA's Image&Video Library */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E29D57AD25EE353D00BF9761 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29D57BF25EE353F00BF9761 /* LaunchScreen.storyboard in Resources */,
+				E29D57BC25EE353F00BF9761 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E29D57AB25EE353D00BF9761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29D57E025EE371F00BF9761 /* Image.swift in Sources */,
+				E29D57FC25EE909E00BF9761 /* DetailView.swift in Sources */,
+				E29D57DD25EE370C00BF9761 /* ImageDataSource.swift in Sources */,
+				E29D57EA25EE4A2300BF9761 /* ImageSearchBar.swift in Sources */,
+				E29D57F725EE8E4B00BF9761 /* UIColor+Extension.swift in Sources */,
+				E29D57E525EE41F100BF9761 /* Endpoint.swift in Sources */,
+				E29D57DC25EE370C00BF9761 /* ImageCollectionViewFlowLayout.swift in Sources */,
+				E29D57EF25EE6E7F00BF9761 /* Constants.swift in Sources */,
+				E29D57B725EE353D00BF9761 /* ImageController.swift in Sources */,
+				E29D57DA25EE370C00BF9761 /* ImageCollectionView.swift in Sources */,
+				E29D57DB25EE370C00BF9761 /* ImageCollectionViewCell.swift in Sources */,
+				E29D57B325EE353D00BF9761 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E29D57BD25EE353F00BF9761 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E29D57BE25EE353F00BF9761 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E29D57C125EE353F00BF9761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E29D57C225EE353F00BF9761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E29D57C425EE353F00BF9761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "NASA's Image&Video Library/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.myacc.anthprj.NASA-s-Image-Video-Library";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E29D57C525EE353F00BF9761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "NASA's Image&Video Library/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.myacc.anthprj.NASA-s-Image-Video-Library";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E29D57AA25EE353D00BF9761 /* Build configuration list for PBXProject "NASA's Image&Video Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E29D57C125EE353F00BF9761 /* Debug */,
+				E29D57C225EE353F00BF9761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E29D57C325EE353F00BF9761 /* Build configuration list for PBXNativeTarget "NASA's Image&Video Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E29D57C425EE353F00BF9761 /* Debug */,
+				E29D57C525EE353F00BF9761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E29D57A725EE353D00BF9761 /* Project object */;
+}
