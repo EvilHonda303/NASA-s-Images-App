@@ -8,7 +8,11 @@
 import UIKit
 
 final class ImageDataSource: NSObject, UICollectionViewDataSource {
-    private var images = [Image]()
+    private var images: Images
+    
+    init(images storage: Images) {
+        images = storage
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10

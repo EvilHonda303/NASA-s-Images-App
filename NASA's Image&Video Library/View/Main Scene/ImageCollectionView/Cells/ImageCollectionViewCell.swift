@@ -96,4 +96,8 @@ final class ImageCollectionViewCell: UICollectionViewCell {
             imageView.image = nil
         }
     }
+    
+    func update(with url: URL?) {
+        
+    }
 }

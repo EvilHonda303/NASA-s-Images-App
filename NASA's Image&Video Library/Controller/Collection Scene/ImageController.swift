@@ -6,19 +6,34 @@
 //
 
 import UIKit
+import Network
 
 class ImageController: UIViewController {
+    // Model layer
+    let images = Images()
+    
+    // View layer
     let imageCollection = ImageCollectionView()
     let imageSearchBar = ImageSearchBar()
     let NASAImageView = UIImageView()
     
+    // Collection View Data Source
+    lazy var imageDataSource: ImageDataSource = ImageDataSource(images: self.images)
+    
     override func viewDidLoad() {
         // Configures content view
+        images.fetchResults()
+        
         self.configureContentView()
+        
         // Sets view's hierarchy
         self.view.addSubview(self.imageCollection)
         self.view.addSubview(self.imageSearchBar)
         self.view.addSubview(self.NASAImageView)
+        
+        // adjust view layer
+        self.adjustImageCollection()
+        
         // Configures subviews
         self.configureNASAImageView()
         
@@ -30,6 +45,14 @@ class ImageController: UIViewController {
         self.addConstraintsToSearchBarAtView()
         self.addConstraintsToCollectionAndSearchBar()
         self.addConstraintsToCollectionAtView()
+    }
+    
+    // MARK: - Combine Model&View Layers
+    
+    func adjustImageCollection() {
+        self.imageCollection.register(ImageCollectionViewCell.self,
+                                      forCellWithReuseIdentifier: ImageCollectionViewCell.reuseIdentifier)
+        self.imageCollection.dataSource = self.imageDataSource
     }
     
     // MARK: - Configure
@@ -97,6 +120,35 @@ class ImageController: UIViewController {
         self.imageCollection.leadingAnchor.constraint(equalTo: superView.leadingAnchor).isActive = true
         self.imageCollection.widthAnchor.constraint(equalTo: superView.widthAnchor, multiplier: 1.0).isActive = true
     }
+}
+
+extension ImageController: ImagesObserver {
     
+    // MARK: - Images' Observer Implementation
+    
+    // calls when:
+    //   - app launches
+    //   - user tries to load image's database after internet connection failure
+    func didImagesStartLoading(_ images: Images) {
+        
+    }
+    
+    // calls when:
+    //   - loading fails because of the lack of internet connection
+    func didNoInternetConnection(_ images: Images) {
+        
+    }
+    
+    // calls when:
+    //  - any error occurs at the time of request to NASA's Api
+    func didNetworkingErrorOccured(_ images: Images, error: NetworkingError) {
+        
+    }
+    
+    // calls when:
+    //  - all images successfully recieved from the server
+    func didImagesFinishLoading(_ images: Images, image: [Images.ImageModel]) {
+        
+    }
 }
 
