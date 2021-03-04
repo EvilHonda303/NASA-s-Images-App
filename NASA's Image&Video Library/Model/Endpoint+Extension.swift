@@ -8,6 +8,7 @@
 import Foundation
 
 // Defines URL that will be passed to the data task!
+
 extension Endpoint {
     var url: URL {
         var components = URLComponents()
@@ -27,6 +28,7 @@ extension Endpoint {
 }
 
 // Concrete URLs
+
 extension Endpoint {
     // fetch all images from Image&Video Gallery
     static func fetchImages() -> Self {

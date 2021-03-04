@@ -7,8 +7,17 @@
 
 import Foundation
 
+// Defines model and its behaviour (by state's enum)
+// - Load itself from NASA's API
+// - Supports observing by implementation observing pattern
+// - Pass model's data to the Collection Scene Controller
+
+
+// MARK: - Model's Definition
+
 class Images {
     struct ImageModel {
+        let id: UInt
         let imageURL: URL
         let title: String
         let location: String?
@@ -24,12 +33,12 @@ class Images {
         }
     }
     
-    private var images: [ImageModel] = []
+    private(set) var images: [ImageModel] = []
 }
 
+// MARK: - Model's States
+
 private extension Images {
-    // MARK: - Possible States
-    
     enum State {
         case initialized
         case startLoading
@@ -62,6 +71,8 @@ private extension Images {
     }
 }
 
+// MARK: - Observation's support
+
 private extension Images {
     struct Observation {
         weak var observer: ImagesObserver?
@@ -69,8 +80,6 @@ private extension Images {
 }
 
 extension Images {
-    // MARK: - Observation's support
-    
     func addObserver(observer: ImagesObserver) {
         let id = ObjectIdentifier(observer)
         self.observations.updateValue(Observation(observer: observer), forKey: id)
@@ -82,13 +91,13 @@ extension Images {
     }
 }
 
+// MARK: - Load Data From API
+
 extension Images {
-    // MARK: - Load Data From API
-    
     func fetchResults() {
         self.state = .startLoading
         
-        DispatchQueue.global(qos: .utility).async {
+        DispatchQueue.global(qos: .utility).async { [weak self] in
             let fetchDataGroup = DispatchGroup()
             
             let url = Endpoint.fetchImages().url
@@ -116,7 +125,7 @@ extension Images {
                 fetchedData = try requestResult.get()
             } catch {
                 DispatchQueue.main.async {
-                    self.setStateBased(on: (error as! NetworkingError))
+                    self?.setStateBased(on: (error as! NetworkingError))
                 }
                 return
             }
@@ -125,17 +134,19 @@ extension Images {
             
             guard let fetchedImagesInfo = try? JSONDecoder().decode(Collection.self, from: fetchedData) else {
                 DispatchQueue.main.async {
-                    self.setStateBased(on: .DataError)
+                    self?.setStateBased(on: .DataError)
                 }
                 return
             }
             
             // map decoded object to the model
-            let images: [ImageModel] = self.map(fetchedImagesInfo)
+            guard let images: [ImageModel] = self?.map(fetchedImagesInfo) else {
+                return
+            }
             
             DispatchQueue.main.async {
-                self.images = images
-                self.state = .finishLoading(images: images)
+                self?.images = images
+                self?.state = .finishLoading(images: images)
             }
         }
     }
@@ -153,8 +164,9 @@ extension Images {
         let images = from.collection.images
         var imageModels: [ImageModel] = []
         
-        for image in images {
-            imageModels.append(ImageModel(imageURL: image.resources[0].imageURL,
+        for (index, image) in images.enumerated() {
+            imageModels.append(ImageModel(id: UInt(index),
+                                          imageURL: image.resources[0].imageURL,
                                           title: image.data[0].title,
                                           location: image.data[0].location,
                                           description: image.data[0].description,

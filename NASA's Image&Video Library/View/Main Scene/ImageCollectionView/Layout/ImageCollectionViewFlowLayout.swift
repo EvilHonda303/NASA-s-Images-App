@@ -13,7 +13,8 @@ final class ImageCollectionViewFlowLayout: UICollectionViewFlowLayout {
     private let lineSpacing: CGFloat = UIConstants.unitedInset
     private let cellSpacing: CGFloat = UIConstants.unitedInset
     private let contentInset: CGFloat = UIConstants.unitedInset
-    private let squareCellSize: CGFloat = UIScreen.main.bounds.width / 2 - UIConstants.unitedInset - UIConstants.unitedInset / 2
+    private let widthCellSize: CGFloat = UIScreen.main.bounds.width / 2 - UIConstants.unitedInset - UIConstants.unitedInset / 2
+    private let heightCellSize: CGFloat = 1.2 * (UIScreen.main.bounds.width / 2 - UIConstants.unitedInset - UIConstants.unitedInset / 2)
     
     // MARK: - Initializers
     
@@ -32,7 +33,7 @@ final class ImageCollectionViewFlowLayout: UICollectionViewFlowLayout {
     func configureLayout() {
         self.scrollDirection = .vertical
         
-        self.itemSize = CGSize(width: self.squareCellSize, height: self.squareCellSize)
+        self.itemSize = CGSize(width: self.widthCellSize, height: self.heightCellSize)
         self.minimumLineSpacing = self.lineSpacing
         self.minimumInteritemSpacing = self.cellSpacing
         self.sectionInset = UIEdgeInsets(top: self.contentInset,

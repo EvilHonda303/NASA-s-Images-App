@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E27E9DFD25F0D50F00847FD5 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27E9DFC25F0D50F00847FD5 /* UIView+Extension.swift */; };
 		E29D57B325EE353D00BF9761 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D57B225EE353D00BF9761 /* AppDelegate.swift */; };
 		E29D57B725EE353D00BF9761 /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D57B625EE353D00BF9761 /* ImageController.swift */; };
 		E29D57BC25EE353F00BF9761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E29D57BB25EE353F00BF9761 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		E29D57EF25EE6E7F00BF9761 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D57EE25EE6E7F00BF9761 /* Constants.swift */; };
 		E29D57F725EE8E4B00BF9761 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D57F625EE8E4B00BF9761 /* UIColor+Extension.swift */; };
 		E29D57FC25EE909E00BF9761 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D57FB25EE909E00BF9761 /* DetailView.swift */; };
+		E2A8C73125F0001500798F43 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A8C73025F0001500798F43 /* UIButton+Extension.swift */; };
 		E2B3A40F25EEC0A20075261A /* DetailControllerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B3A40E25EEC0A20075261A /* DetailControllerController.swift */; };
 		E2FA06D325EED8A300DE50BA /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA06D225EED8A300DE50BA /* URLSession+Extension.swift */; };
 		E2FA06D625EED95E00DE50BA /* NetworkingError+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA06D525EED95E00DE50BA /* NetworkingError+Enum.swift */; };
@@ -30,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E27E9DFC25F0D50F00847FD5 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E29D57AF25EE353D00BF9761 /* NASA's Image&Video Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NASA's Image&Video Library.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29D57B225EE353D00BF9761 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E29D57B625EE353D00BF9761 /* ImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 		E29D57EE25EE6E7F00BF9761 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E29D57F625EE8E4B00BF9761 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		E29D57FB25EE909E00BF9761 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		E2A8C73025F0001500798F43 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		E2B3A40E25EEC0A20075261A /* DetailControllerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailControllerController.swift; sourceTree = "<group>"; };
 		E2FA06D225EED8A300DE50BA /* URLSession+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
 		E2FA06D525EED95E00DE50BA /* NetworkingError+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkingError+Enum.swift"; sourceTree = "<group>"; };
@@ -192,6 +196,8 @@
 			children = (
 				E29D57EE25EE6E7F00BF9761 /* Constants.swift */,
 				E29D57F625EE8E4B00BF9761 /* UIColor+Extension.swift */,
+				E2A8C73025F0001500798F43 /* UIButton+Extension.swift */,
+				E27E9DFC25F0D50F00847FD5 /* UIView+Extension.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 				E29D57E025EE371F00BF9761 /* Images.swift in Sources */,
 				E2FA06D325EED8A300DE50BA /* URLSession+Extension.swift in Sources */,
 				E2FA06DA25EF588600DE50BA /* ImagesObserver+Protocol.swift in Sources */,
+				E2A8C73125F0001500798F43 /* UIButton+Extension.swift in Sources */,
 				E29D57FC25EE909E00BF9761 /* DetailView.swift in Sources */,
 				E29D57DD25EE370C00BF9761 /* ImageDataSource.swift in Sources */,
 				E29D57EA25EE4A2300BF9761 /* ImageSearchBar.swift in Sources */,
@@ -331,6 +338,7 @@
 				E29D57DA25EE370C00BF9761 /* ImageCollectionView.swift in Sources */,
 				E29D57DB25EE370C00BF9761 /* ImageCollectionViewCell.swift in Sources */,
 				E2FA06D625EED95E00DE50BA /* NetworkingError+Enum.swift in Sources */,
+				E27E9DFD25F0D50F00847FD5 /* UIView+Extension.swift in Sources */,
 				E29D57B325EE353D00BF9761 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
